@@ -1,0 +1,7 @@
+def bin2hexs(val, nbits):
+  return hex((val + (1 << nbits)) % (1 << nbits))
+
+print bin2hexs(-199703103, 64) # 0xfffffffff418c5c1L
+print bin2hexs(199703103, 64) # 0xbe73a3fL
+
+
